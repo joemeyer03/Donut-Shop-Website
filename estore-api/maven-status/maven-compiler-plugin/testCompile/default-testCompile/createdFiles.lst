@@ -1,0 +1,8 @@
+com/estore/api/estoreapi/ProductTest.class
+com/estore/api/estoreapi/ReviewsTest.class
+com/estore/api/estoreapi/CheckoutControllerTests.class
+com/estore/api/estoreapi/ReviewsControllerTests.class
+com/estore/api/estoreapi/InventoryFileDAOTest.class
+com/estore/api/estoreapi/ReviewsDAOTest.class
+com/estore/api/estoreapi/EstoreApiApplicationTests.class
+com/estore/api/estoreapi/CartFileControllerTests.class

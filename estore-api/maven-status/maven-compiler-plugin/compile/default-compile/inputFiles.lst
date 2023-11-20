@@ -1,0 +1,13 @@
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/controller/CheckoutController.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/controller/ProductController.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/controller/ReviewsController.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/persistence/InventoryDAO.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/persistence/CartFileDAO.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/persistence/ReviewsDAO.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/controller/CartController.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/persistence/CheckoutFileDAO.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/model/Reviews.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/EstoreApiApplication.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/WebConfig.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/persistence/InventoryFileDAO.java
+/Users/joemeyer/Desktop/RIT/SWEN/team-project-2221-swen-261-07-f-joe-sos/estore-api/src/main/java/com/estore/api/estoreapi/model/Product.java
