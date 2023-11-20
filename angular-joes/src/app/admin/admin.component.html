@@ -1,0 +1,32 @@
+<div *ngIf="!(isAdminLoggedIn())">
+  You must be an admin to access this page.
+</div>
+
+<div *ngIf="(isAdminLoggedIn())">
+  <h2>Inventory</h2>
+  <div>
+    <label for="new-product">Product name: </label>
+    <input name="new-product" #productName />
+    <br>
+    <label for="new-product">Product price: </label>
+    <input price="new-product" #productPrice />
+    <br>
+    <label for="new-product">Product quantity: </label>
+    <input quantity="new-product" #productQuantity />
+    <br>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button type="button" class="add-button" (click)="add(productName.value, productPrice.value, productQuantity.value); 
+      productName.value=''; productPrice.value=''; productQuantity.value=''"> 
+      Add product </button>
+  </div>
+
+  <ul class="products">
+    <li *ngFor="let product of products">
+      <a routerLink="/detail/{{product.name}}">
+        {{product.name}}
+      </a>
+      <button type="button" class="delete" title="delete product"
+        (click)="delete(product)">x</button>
+    </li>
+  </ul>
+</div>

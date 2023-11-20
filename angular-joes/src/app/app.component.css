@@ -1,0 +1,105 @@
+/* AppComponent's private CSS styles */
+h1 {
+    font-size: 75px;
+    padding: 40px;
+    background-color: #f4a79f;
+    border-radius: 4px;
+    font-style: italic;
+    color: white;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background-color: #f4a79f;
+    color: #3d3d3d;
+    border-radius: 4px;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #42545C;
+  }
+  nav a:active {
+    background-color: black;
+  }
+
+  .logoDiv {
+    background-image: linear-gradient(#f4a79f, #ffcbc5, #85615e);
+    background-color: #f4a79f;
+    text-align: center;
+    position: relative;
+    padding:1%;
+  }
+
+  img.logo {
+    height:200px;
+    padding:-100px;
+  }
+
+  .blueBg {
+    background-image: url('src/assets/bluedonutsbackground.png');
+    transform: translateZ(10px) scale(0.9);
+    transform-style: preserve-3d;
+  }
+
+  .pinkBg {
+    background-image: url('src/assets/pinkdonutsbackground.png');
+    transform-style: preserve-3d;
+    transform: translateY(-12.5%);
+  }
+
+  .brownBg {
+    background-image: url('src/assets/browndonutsbackground.png');
+    transform: translateZ(10px) scale(0.9);
+    transform-style: preserve-3d;
+    
+  }
+
+  .whiteBg {
+    background-image: url('src/assets/whitedonutsbackground.png');
+    transform: translateZ(10px) scale(0.9);
+    transform-style: preserve-3d;
+  }
+
+  .yellowBg {
+    background-image: url('src/assets/yellowdonutsbackground.png');
+    transform: translateZ(10px) scale(0.9);
+    transform-style: preserve-3d;
+  }
+
+  .bg {
+    background-image: url('src/assets/bg_stylized.png');
+    transform-style: preserve-3d;
+  }
+
+  .wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 100px;
+    background-size: cover;
+    background-color:wheat;
+  }
+
+  .buttonBar {
+    background-image: url('src/assets/bg_gradient.png');
+    background-color: #7a7a7a;
+  }
+
+  .dashboard {
+    transform: scale(0.875);
+  }
+
+  .buttonText {
+    font-size:20px;
+    color:black;
+  }

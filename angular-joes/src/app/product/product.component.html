@@ -1,0 +1,16 @@
+
+<mat-grid-list class = "grid" cols="5" gutterSize="20" colWidth="300">
+    <!-- <div class="products-grid" *ngFor="let product of products" routerLink="/detail/{{product.name}}"> -->
+        <mat-grid-tile class="products-tile" *ngFor="let product of products" routerLink="/detail/{{product.name}}">
+            
+            <img class="image" [src]="product.image"alt=""/>
+            <mat-grid-tile-footer class="text">
+                <div class="footer"> {{product.name}} </div>
+            </mat-grid-tile-footer>
+            
+        </mat-grid-tile>
+        
+    <!-- </div> -->
+</mat-grid-list>
+
+<!--   -->

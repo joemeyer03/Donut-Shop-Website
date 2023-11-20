@@ -1,0 +1,49 @@
+<div *ngIf="isOnDashboard()" class="wrapper">
+    <div class="bg">
+        <div class="pinkBg">
+            <div class="blueBg">
+                <div class="whiteBg">
+                    <div class="yellowBg">
+                        <div class="brownBg">
+                            <br><br><br><br>
+                            <div class="logoDiv">
+                                <img class="logo" src="assets/textcolortest.png" alt="Logo Image">
+                            </div>
+                            <div class="buttonBar">
+                                <nav>
+                                    <div class="buttonText">
+                                        <a routerLink="/dashboard"><strong>All Products</strong></a>
+                                        <a *ngIf="!isAdminLoggedIn()" routerLink="/cart"><strong>Cart</strong></a>
+                                        <a routerLink="/login"><strong>Log In</strong></a>
+                                        <a *ngIf="isAdminLoggedIn()"
+                                        routerLink="/admin"><strong>Admin</strong></a>
+                                    </div>
+                                </nav>
+                            </div>
+                        <div class="dashboard">
+                            <router-outlet></router-outlet>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!(isOnDashboard())">
+    <div class="logoDiv">
+        <img class="logo" src="assets/textcolortest.png" alt="Logo Image">
+    </div>
+    <div class="buttonBar">
+        <nav>
+            <div class="buttonText">
+                <a routerLink="/dashboard"><strong>All Products</strong></a>
+                <a *ngIf="!isAdminLoggedIn()" routerLink="/cart"><strong>Cart</strong></a>
+                <a routerLink="/login"><strong>Log In</strong></a>
+                <a *ngIf="isAdminLoggedIn()"
+                routerLink="/admin"><strong>Admin</strong></a>
+            </div>
+        </nav>
+    </div>
+    <router-outlet></router-outlet>  
+</div>

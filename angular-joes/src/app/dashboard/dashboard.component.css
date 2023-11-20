@@ -1,0 +1,109 @@
+/* DashboardComponent's private CSS styles */
+
+h2 {
+    text-align: center;
+    color:white;
+    text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000;
+  }
+  
+  .products-menu {
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+  
+    /* flexbox */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  a {
+    background-color: #3f525c;
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    margin: .5rem auto;
+    box-sizing: border-box;
+  
+    /* flexbox */
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  
+  @media (min-width: 600px) {
+    a {
+      width: 18%;
+      box-sizing: content-box;
+    }
+  }
+  
+  a:hover {
+    background-color: black;
+  }
+
+  .b {
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000;
+  }
+
+  .clearBackground {
+    background-color:#ffffff00;
+  }
+
+  .blueBg {
+    background-image: url('src/assets/bluedonutsbackground.png');
+    transform: translateZ(10px) scale(1);
+    transform-style: preserve-3d;
+  }
+
+  .pinkBg {
+    background-image: url('src/assets/pinkdonutsbackground.png');
+    transform-style: preserve-3d;
+  }
+
+  .brownBg {
+    background-image: url('src/assets/browndonutsbackground.png');
+    transform: translateZ(20px) scale(1);
+    transform-style: preserve-3d;
+  }
+
+  .whiteBg {
+    background-image: url('src/assets/whitedonutsbackground.png');
+    transform: translateZ(30px) scale(1);
+    transform-style: preserve-3d;
+  }
+
+  .yellowBg {
+    background-image: url('src/assets/yellowdonutsbackground.png');
+    transform: translateZ(10px) scale(1);
+    transform-style: preserve-3d;
+  }
+
+  .wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 100px;
+    background-size: cover;
+    background-color:wheat;
+  }
+
+  .end {
+    background-color: black;
+    min-height: 100vh;
+  }

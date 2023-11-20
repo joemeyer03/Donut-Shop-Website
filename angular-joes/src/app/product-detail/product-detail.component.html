@@ -1,0 +1,38 @@
+<div *ngIf="product">
+
+    <h2>{{product.name | uppercase}} Details</h2>
+    <div id="description">
+      <span>Name: </span>{{product.name}}
+      <br>
+      <input *ngIf="isAdminLoggedIn()" id="product-name" #box (keyup.enter)="updateName(box.value)" placeholder="name">
+    </div>
+    <div id="description">
+      <span>Price: </span>${{product.price}}
+      <br>
+      <input *ngIf="isAdminLoggedIn()" id="product-price" [(ngModel)]="product.price" placeholder="price">
+    </div>
+    <div id="description">
+      <span>Quantity: </span>{{product.quantity}}
+      <br>
+      <input *ngIf="isAdminLoggedIn()" id="product-quantity" [(ngModel)]="product.quantity" placeholder="quantity">
+    </div>
+    <div id="buttons">
+      <button type="button" (click)="goBack()">Back</button>
+      <button *ngIf="!isAdminLoggedIn()"type="button" (click)="addToCart()">Add to Cart</button>
+      <button *ngIf="isAdminLoggedIn()" type="button" (click)="save()">Save</button>
+    </div>
+
+</div>
+<br>
+  <h2>Reviews: </h2>
+  <div id="add">
+    <input size="80" id="add-review" [(ngModel)]="reviewToAdd">
+    <button (click)="addReview()">Add Review</button>
+    <br>
+  </div>
+  <br>
+  <div id="list" *ngIf="reviews">
+    <a *ngFor="let review of getReviews()" id = "a">
+      {{review}}<br>
+    </a>
+  </div>

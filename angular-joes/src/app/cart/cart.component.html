@@ -1,0 +1,28 @@
+<div class="bg">
+    <p *ngIf="!(isUserLoggedIn())"> Please log in to access the cart </p>
+
+    <div *ngIf="isUserLoggedIn()">
+        <p *ngIf="isAdminLoggedIn()"> Admins can not access the cart </p>
+        <div *ngIf="!(isAdminLoggedIn())">
+            <h2>Your Cart</h2>
+            <div class = "cartMenu">
+                <a *ngFor="let product of getItems()" id = "a">
+                    <a1 routerLink="/detail/{{product.name}}" id = "b">
+                        {{product.name | uppercase}}: ${{getPrice(product)}}
+                    </a1>
+                    ({{getQuantity(product)}})
+                    <button type="button" (click)="decrease(product)">-</button>
+                    <button type="button" (click)="increase(product)">+</button>
+                    <button type="button" (click)="remove(product)">x</button>
+                    <br>
+                </a>
+                <div id="clear"><button type="button" (click)="clear()">Clear</button></div>
+                <br>
+                <div id="total">
+                    Total: ${{getTotal()}}
+                </div>
+                <a routerLink="/checkout">Checkout</a>
+            </div>
+          </div>
+    </div>
+</div>

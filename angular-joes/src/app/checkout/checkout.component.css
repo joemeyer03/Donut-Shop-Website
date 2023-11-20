@@ -1,0 +1,21 @@
+.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: center;
+    margin:auto;
+    position:relative;
+}
+
+tr, td {
+    border: 1px solid black;
+    background-color:white;
+}
+
+.bg {
+    background-color: wheat;
+    min-height:59.9vh;
+}

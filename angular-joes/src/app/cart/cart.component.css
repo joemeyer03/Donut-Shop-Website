@@ -1,0 +1,71 @@
+/* CartComponent's private CSS styles */
+
+h2 {
+    text-align: center;
+}
+
+#clear {
+    text-align: center;
+}
+
+#total {
+    text-align: center;
+    font-size: 20px;
+    color:black;
+}
+
+a {
+    background-color: #3f525c;
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    margin: .5rem auto;
+    box-sizing: border-box;
+  
+    /* flexbox */
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+#b:hover {
+    background: black;
+}
+
+@media (min-width: 600px) {
+    a {
+      width: 18%;
+      box-sizing: content-box;
+    }
+}
+
+a1 {
+    background-color: #3f525c;
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    margin: .5rem auto;
+    box-sizing: border-box;
+  
+    /* flexbox */
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.bg {
+    background-color:wheat;
+    min-height: 59.9vh;
+}

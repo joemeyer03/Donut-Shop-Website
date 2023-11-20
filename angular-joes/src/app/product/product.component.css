@@ -1,0 +1,39 @@
+.grid{
+    padding: 50px;
+    border-spacing: 50px;
+    border-collapse: separate;
+    }
+
+.products-tile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background-color: white;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+    border-top: 2px solid #333333;
+}
+
+.image{
+    float:inline-end;
+    height:15rem;
+    align-items: center;
+}
+
+.text {
+    font-size: 1em;
+    background-color: blue;
+    background-color: white;
+    /* clear:both;
+    align-self: center;
+    justify-content: flex-start !important; */
+}
+
+.footer {
+    color:white;
+    font-size:auto;
+    text-shadow:
+    -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; 
+}

@@ -1,0 +1,74 @@
+/* AdminComponent's private CSS styles */
+.products {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  
+  input {
+    display: block;
+    width: 15%;
+    padding: .5rem;
+    box-sizing: border-box;
+  }
+  
+  .products li {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .products li:hover {
+    left: .1em;
+  }
+  
+  .products a {
+    color: rgb(255, 239, 241);
+    text-decoration: none;
+    background-color: #f4a79f;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.3em;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+  
+  .products a:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+  }
+  
+  .products a:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+  
+  .add-button {
+   padding: .5rem 1.5rem;
+   font-size: 1rem;
+   margin-bottom: 2rem;
+  }
+  
+  .add-button:hover {
+    color: white;
+    background-color: #525252;
+  }
+  
+  button.delete {
+    position: absolute;
+    left: 220px;
+    top: 1px;
+    background-color: white;
+    color:  #525252;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 1px 10px 3px 10px;
+  }
+  
+  button.delete:hover {
+    background-color: red;
+    color: white;
+  }

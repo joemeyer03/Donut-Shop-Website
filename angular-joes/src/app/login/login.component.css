@@ -1,0 +1,45 @@
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.inputBox {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+.inputBox > input {
+    margin: auto;
+    font-size: 40px;
+}
+
+.centeredText{
+    text-align: center;
+}
+
+.centeredText > button {
+    border-radius: 4px;
+    font-size: 40px;
+    background-color: #f15645;
+    
+    padding: 1%;
+}
+
+.centeredText > button:hover {
+    color: white;
+    background-color: #42545C;
+}
+
+.bg {
+    background-color: wheat;
+    min-height: 59.9vh;
+    overflow-y:hidden;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+    line-height: 100%;
+}

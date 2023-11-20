@@ -1,0 +1,31 @@
+<!--this section is for displaying current cart-->
+<div class="bg">
+    <div class="centered">
+        <a *ngFor="let product of getProductsInCart()">
+            <a1 routerLink="/detail/{{product.name}}">
+                {{product.name}}: ${{getPrice(product)}}
+            </a1>
+            ({{getQuantity(product)}})
+        </a>    
+    </div>
+    
+    <div *ngIf="getHasCart()">
+        <div class="centered">
+            <p>Total: ${{getTotal()}}</p>
+            <button type="button" (click)="checkout()">Confirm</button>
+        </div>
+    </div>
+    
+    <p>Orders:</p>
+    <!--this section displays all orders-->
+    <table class="centered">
+        <tr *ngFor="let cart of getOrders(); let i = index">
+            <p style="background-color:rgba(0, 0, 0, 0)">Order: </p>
+            <td *ngFor="let product of cart" id="a">
+              <div>
+                <p>({{product.quantity}}) {{product.name}}</p>
+              </div>
+            </td>
+        </tr>
+    </table>
+</div>

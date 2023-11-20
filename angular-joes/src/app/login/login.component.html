@@ -1,0 +1,20 @@
+<div class="bg">
+    <br>
+    <h2>Login</h2>
+    <br><br>
+    <div *ngIf="getHasUser()">
+        <p>Logged in as</p>
+        <p><strong>{{getUsername()}}</strong></p>
+        <br><br><br><br><br>
+        <div class="centeredText">
+            <button type="button" (click)="logout()">Log out</button>
+        </div>
+        
+    </div>
+    <div *ngIf="!(getHasUser())">
+        <br><br>
+        <div class="inputBox">
+            <input #box (keyup.enter)="onEnter(box.value)" placeholder="Enter username here...">
+        </div>
+    </div>
+</div>
